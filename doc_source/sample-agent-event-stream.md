@@ -11,17 +11,16 @@ For how many chats and tasks an agent can take concurrently, see [Amazon Connect
     "AgentARN": "arn:aws:connect:us-west-2:012345678901:instance/aaaaaaaa-bbbb-cccc-dddd-111111111111/agent/agent-ARN",
     "CurrentAgentSnapshot": 
       {
-    "AgentStatus": {
+        "AgentStatus": {
             "ARN": "example-ARN", //The ARN for the agent's current agent status (not for the agent).
             "Name": "Available",  //This shows the agent status in the CCP is set to Available. 
             "StartTimestamp": "2019-08-13T20:52:30.704Z"
         },
-     "NextAgentStatus": {
+        "NextAgentStatus": {
             "Name": "Lunch", //They set their next status, which pauses new contacts being routed to them while they finish their current contacts.
             "ARN": "example-ARN2",  //The ARN of the agent status that the agent has set as their next status. 
-            "EnqueuedTimestamp": "2019-08-13T20:58:00.004Z",   //When the agent set their next status and paused routing of incoming contacts.
-        }
-      } ,
+            "EnqueuedTimestamp": "2019-08-13T20:58:00.004Z"   //When the agent set their next status and paused routing of incoming contacts.
+        },
         "Configuration": {
             "AgentHierarchyGroups": null,
             "FirstName": "AgentEventStreamTest",
